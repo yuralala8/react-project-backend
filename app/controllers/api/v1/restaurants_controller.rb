@@ -20,10 +20,4 @@ class Api::V1::RestaurantsController < ApplicationController
 	end
 
 
-	private
-
-	def restaurant_params
-		params.require(:data).permit(:search, :location)
-	end
-
 end
