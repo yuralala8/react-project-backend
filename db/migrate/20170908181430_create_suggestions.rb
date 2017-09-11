@@ -4,6 +4,7 @@ class CreateSuggestions < ActiveRecord::Migration[5.1]
       t.integer :res_id
       t.integer :vote_up
       t.integer :vote_down
+      t.string :username
       t.integer :user_id
 
       t.timestamps

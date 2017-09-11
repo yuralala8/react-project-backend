@@ -4636,3 +4636,359 @@ app/controllers/api/v1/suggestions_controller.rb:11:in `create'
 Completed 200 OK in 2897ms (Views: 6.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/api/v1/restaurants/sushi/11101" for 127.0.0.1 at 2017-09-11 17:46:23 -0400
+Processing by Api::V1::RestaurantsController#index as */*
+  Parameters: {"search"=>"sushi", "location"=>"11101"}
+Completed 200 OK in 2693ms (Views: 248.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/suggestions" for 127.0.0.1 at 2017-09-11 17:46:29 -0400
+Processing by Api::V1::SuggestionsController#create as JSON
+  Parameters: {"res_id"=>"16787209", "suggestion"=>{"res_id"=>"16787209"}}
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/api/v1/suggestions_controller.rb:10:in `create'
+Started GET "/api/v1/restaurants/sandwich/11101" for 127.0.0.1 at 2017-09-11 17:49:43 -0400
+Processing by Api::V1::RestaurantsController#index as */*
+  Parameters: {"search"=>"sandwich", "location"=>"11101"}
+Completed 200 OK in 1835ms (Views: 182.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/suggestions" for 127.0.0.1 at 2017-09-11 17:49:48 -0400
+Processing by Api::V1::SuggestionsController#create as JSON
+  Parameters: {"res_id"=>"16790698", "suggestion"=>{"res_id"=>"16790698"}}
+Completed 500 Internal Server Error in 322673ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/api/v1/suggestions_controller.rb:10:in `create'
+Started GET "/api/v1/restaurants/sandwich/11101" for 127.0.0.1 at 2017-09-11 17:55:15 -0400
+Processing by Api::V1::RestaurantsController#index as */*
+  Parameters: {"search"=>"sandwich", "location"=>"11101"}
+Completed 200 OK in 1735ms (Views: 180.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/suggestions" for 127.0.0.1 at 2017-09-11 17:55:19 -0400
+Processing by Api::V1::SuggestionsController#create as JSON
+  Parameters: {"res_id"=>"16790698", "suggestion"=>{"res_id"=>"16790698"}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 1935508ms (ActiveRecord: 187.9ms)
+
+
+  
+SystemExit (exit):
+  
+Started GET "/api/v1/restaurants/sandwich/11101" for 127.0.0.1 at 2017-09-11 18:27:35 -0400
+(byebug):1:in `exit'
+(byebug):1:in `current_user'
+app/controllers/application_controller.rb:29:in `current_user'
+app/controllers/application_controller.rb:38:in `logged_in?'
+app/controllers/application_controller.rb:43:in `authorized'
+Processing by Api::V1::RestaurantsController#index as */*
+  Parameters: {"search"=>"sandwich", "location"=>"11101"}
+Completed 200 OK in 2103ms (Views: 193.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/restaurants/sandwich/11101" for 127.0.0.1 at 2017-09-11 18:27:42 -0400
+Processing by Api::V1::RestaurantsController#index as */*
+  Parameters: {"search"=>"sandwich", "location"=>"11101"}
+Completed 200 OK in 1759ms (Views: 178.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/suggestions" for 127.0.0.1 at 2017-09-11 18:27:45 -0400
+Processing by Api::V1::SuggestionsController#create as JSON
+  Parameters: {"res_id"=>"18098744", "suggestion"=>{"res_id"=>"18098744"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 204 No Content in 200ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/api/v1/restaurants/sandwich/11101" for 127.0.0.1 at 2017-09-11 18:28:21 -0400
+Processing by Api::V1::RestaurantsController#index as */*
+  Parameters: {"search"=>"sandwich", "location"=>"11101"}
+Completed 200 OK in 915ms (Views: 182.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/suggestions" for 127.0.0.1 at 2017-09-11 18:28:24 -0400
+Processing by Api::V1::SuggestionsController#create as JSON
+  Parameters: {"res_id"=>"18099449", "suggestion"=>{"res_id"=>"18099449"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 317490ms (ActiveRecord: 1.7ms)
+
+
+  
+SystemExit (exit):
+Started GET "/api/v1/restaurants/subway/11101" for 127.0.0.1 at 2017-09-11 18:33:41 -0400
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/api/v1/suggestions_controller.rb:11:in `create'
+Processing by Api::V1::RestaurantsController#index as */*
+  Parameters: {"search"=>"subway", "location"=>"11101"}
+Completed 200 OK in 2885ms (Views: 190.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/restaurants/sub/11101" for 127.0.0.1 at 2017-09-11 18:33:46 -0400
+Processing by Api::V1::RestaurantsController#index as */*
+  Parameters: {"search"=>"sub", "location"=>"11101"}
+Completed 200 OK in 922ms (Views: 190.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/suggestions" for 127.0.0.1 at 2017-09-11 18:33:48 -0400
+Processing by Api::V1::SuggestionsController#create as JSON
+  Parameters: {"res_id"=>"16759298", "suggestion"=>{"res_id"=>"16759298"}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (4.9ms)[0m  [1m[32mINSERT INTO "suggestions" ("res_id", "vote_up", "vote_down", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["res_id", 16759298], ["vote_up", 0], ["vote_down", 0], ["user_id", 6], ["created_at", "2017-09-11 22:33:49.316990"], ["updated_at", "2017-09-11 22:33:49.316990"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 772ms (ActiveRecord: 9.3ms)
+
+
+  
+NoMethodError (undefined method `stringify' for JSON:Module
+Did you mean?  String):
+  
+app/controllers/api/v1/suggestions_controller.rb:11:in `create'
+Started GET "/api/v1/restaurants/sub/11101" for 127.0.0.1 at 2017-09-11 18:34:07 -0400
+Processing by Api::V1::RestaurantsController#index as */*
+  Parameters: {"search"=>"sub", "location"=>"11101"}
+Completed 200 OK in 1083ms (Views: 193.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/restaurants/subs/11101" for 127.0.0.1 at 2017-09-11 18:36:44 -0400
+Processing by Api::V1::RestaurantsController#index as */*
+  Parameters: {"search"=>"subs", "location"=>"11101"}
+Completed 200 OK in 1980ms (Views: 171.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/suggestions" for 127.0.0.1 at 2017-09-11 18:36:47 -0400
+Processing by Api::V1::SuggestionsController#create as JSON
+  Parameters: {"res_id"=>"18092460", "suggestion"=>{"res_id"=>"18092460"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "suggestions" ("res_id", "vote_up", "vote_down", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["res_id", 18092460], ["vote_up", 0], ["vote_down", 0], ["user_id", 6], ["created_at", "2017-09-11 22:36:47.941819"], ["updated_at", "2017-09-11 22:36:47.941819"]]
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSuggestion Load (1.4ms)[0m  [1m[34mSELECT "suggestions".* FROM "suggestions"[0m
+Completed 500 Internal Server Error in 190621ms (Views: 29.2ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/api/v1/restaurants/sushi/11101" for 127.0.0.1 at 2017-09-11 18:39:58 -0400
+  
+Started GET "/api/v1/restaurants/sushi/11101" for 127.0.0.1 at 2017-09-11 18:39:58 -0400
+Processing by Api::V1::RestaurantsController#index as */*
+SystemExit (exit):
+Processing by Api::V1::RestaurantsController#index as */*
+  Parameters: {"search"=>"sushi", "location"=>"11101"}
+  
+  Parameters: {"search"=>"sushi", "location"=>"11101"}
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/api/v1/suggestions_controller.rb:14:in `create'
+Completed 200 OK in 3018ms (Views: 203.0ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 3288ms (Views: 228.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/restaurants/sushi/11101" for 127.0.0.1 at 2017-09-11 18:40:04 -0400
+Processing by Api::V1::RestaurantsController#index as */*
+  Parameters: {"search"=>"sushi", "location"=>"11101"}
+Completed 200 OK in 1851ms (Views: 194.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/suggestions" for 127.0.0.1 at 2017-09-11 18:40:08 -0400
+Processing by Api::V1::SuggestionsController#create as JSON
+  Parameters: {"res_id"=>"16787209", "suggestion"=>{"res_id"=>"16787209"}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "suggestions" ("res_id", "vote_up", "vote_down", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["res_id", 16787209], ["vote_up", 0], ["vote_down", 0], ["user_id", 6], ["created_at", "2017-09-11 22:40:08.924599"], ["updated_at", "2017-09-11 22:40:08.924599"]]
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSuggestion Load (1.4ms)[0m  [1m[34mSELECT "suggestions".* FROM "suggestions"[0m
+Completed 200 OK in 377ms (Views: 40.7ms | ActiveRecord: 8.4ms)
+
+
+Started POST "/api/v1/suggestions" for 127.0.0.1 at 2017-09-11 18:40:14 -0400
+Processing by Api::V1::SuggestionsController#create as JSON
+  Parameters: {"res_id"=>"18094323", "suggestion"=>{"res_id"=>"18094323"}}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "suggestions" ("res_id", "vote_up", "vote_down", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["res_id", 18094323], ["vote_up", 0], ["vote_down", 0], ["user_id", 6], ["created_at", "2017-09-11 22:40:14.691802"], ["updated_at", "2017-09-11 22:40:14.691802"]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSuggestion Load (1.4ms)[0m  [1m[34mSELECT "suggestions".* FROM "suggestions"[0m
+Completed 200 OK in 166ms (Views: 43.6ms | ActiveRecord: 10.7ms)
+
+
+Started POST "/api/v1/suggestions" for 127.0.0.1 at 2017-09-11 18:40:15 -0400
+Processing by Api::V1::SuggestionsController#create as JSON
+  Parameters: {"res_id"=>"18086800", "suggestion"=>{"res_id"=>"18086800"}}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "suggestions" ("res_id", "vote_up", "vote_down", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["res_id", 18086800], ["vote_up", 0], ["vote_down", 0], ["user_id", 6], ["created_at", "2017-09-11 22:40:15.940099"], ["updated_at", "2017-09-11 22:40:15.940099"]]
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSuggestion Load (1.2ms)[0m  [1m[34mSELECT "suggestions".* FROM "suggestions"[0m
+Completed 200 OK in 184ms (Views: 57.2ms | ActiveRecord: 10.3ms)
+
+
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (6.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7986938912043277095)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSuggestions (20170908181430)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (27.1ms)[0m  [1m[35mDROP TABLE "suggestions"[0m
+  [1m[35mSQL (2.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20170908181430"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7986938912043277095)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7986938912043277095)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSuggestions (20170908181430)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (38.8ms)[0m  [1m[35mCREATE TABLE "suggestions" ("id" bigserial primary key, "res_id" integer, "vote_up" integer, "vote_down" integer, "username" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170908181430"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7986938912043277095)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api/v1/restaurants/sushi/11101" for 127.0.0.1 at 2017-09-11 18:43:21 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::RestaurantsController#index as */*
+  Parameters: {"search"=>"sushi", "location"=>"11101"}
+Completed 200 OK in 2090ms (Views: 199.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/suggestions" for 127.0.0.1 at 2017-09-11 18:43:25 -0400
+Processing by Api::V1::SuggestionsController#create as JSON
+  Parameters: {"res_id"=>"17763022", "suggestion"=>{"res_id"=>"17763022"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mSuggestion Load (1.6ms)[0m  [1m[34mSELECT "suggestions".* FROM "suggestions"[0m
+Completed 200 OK in 419ms (Views: 14.9ms | ActiveRecord: 25.0ms)
+
+
+Started GET "/api/v1/restaurants/sushi/11101" for 127.0.0.1 at 2017-09-11 18:43:55 -0400
+Processing by Api::V1::RestaurantsController#index as */*
+  Parameters: {"search"=>"sushi", "location"=>"11101"}
+Completed 200 OK in 1782ms (Views: 200.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/suggestions" for 127.0.0.1 at 2017-09-11 18:43:58 -0400
+Processing by Api::V1::SuggestionsController#create as JSON
+  Parameters: {"res_id"=>"16786838", "suggestion"=>{"res_id"=>"16786838"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mSuggestion Load (1.4ms)[0m  [1m[34mSELECT "suggestions".* FROM "suggestions"[0m
+Completed 200 OK in 301ms (Views: 12.3ms | ActiveRecord: 20.8ms)
+
+
+Started GET "/api/v1/restaurants/sushi/11101" for 127.0.0.1 at 2017-09-11 18:44:38 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::RestaurantsController#index as */*
+  Parameters: {"search"=>"sushi", "location"=>"11101"}
+Completed 200 OK in 769ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/suggestions" for 127.0.0.1 at 2017-09-11 18:44:39 -0400
+Processing by Api::V1::SuggestionsController#create as JSON
+  Parameters: {"res_id"=>"18086800", "suggestion"=>{"res_id"=>"18086800"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mSuggestion Load (0.5ms)[0m  [1m[34mSELECT "suggestions".* FROM "suggestions"[0m
+Completed 200 OK in 56ms (Views: 0.7ms | ActiveRecord: 29.6ms)
+
+
+Started GET "/api/v1/restaurants/sushi/11101" for 127.0.0.1 at 2017-09-11 18:45:41 -0400
+Processing by Api::V1::RestaurantsController#index as */*
+  Parameters: {"search"=>"sushi", "location"=>"11101"}
+Completed 200 OK in 972ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/suggestions" for 127.0.0.1 at 2017-09-11 18:45:55 -0400
+Processing by Api::V1::SuggestionsController#create as JSON
+  Parameters: {"res_id"=>"18086800", "suggestion"=>{"res_id"=>"18086800"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 151939ms (ActiveRecord: 14.9ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/api/v1/suggestions_controller.rb:10:in `create'
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7986938912043277095)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSuggestions (20170908181430)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.1ms)[0m  [1m[35mDROP TABLE "suggestions"[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20170908181430"]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7986938912043277095)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7986938912043277095)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSuggestions (20170908181430)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE TABLE "suggestions" ("id" bigserial primary key, "res_id" integer, "vote_up" integer, "vote_down" integer, "username" character varying, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170908181430"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7986938912043277095)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api/v1/restaurants/sushi/11101" for 127.0.0.1 at 2017-09-11 18:49:40 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::RestaurantsController#index as */*
+  Parameters: {"search"=>"sushi", "location"=>"11101"}
+Completed 200 OK in 2123ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/suggestions" for 127.0.0.1 at 2017-09-11 18:49:44 -0400
+Processing by Api::V1::SuggestionsController#create as JSON
+  Parameters: {"res_id"=>"18094323", "suggestion"=>{"res_id"=>"18094323"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "suggestions" ("res_id", "vote_up", "vote_down", "username", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["res_id", 18094323], ["vote_up", 0], ["vote_down", 0], ["username", "makeuparandomname"], ["user_id", 6], ["created_at", "2017-09-11 22:49:44.446909"], ["updated_at", "2017-09-11 22:49:44.446909"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSuggestion Load (0.5ms)[0m  [1m[34mSELECT "suggestions".* FROM "suggestions"[0m
+Completed 200 OK in 64ms (Views: 1.8ms | ActiveRecord: 27.8ms)
+
+
