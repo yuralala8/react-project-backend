@@ -21,6 +21,13 @@ ActiveRecord::Schema.define(version: 20170908181430) do
     t.integer "vote_down"
     t.string "username"
     t.integer "user_id"
+    t.string "res_name"
+    t.string "res_cuisines"
+    t.string "res_location"
+    t.string "res_menu_url"
+    t.string "res_image"
+    t.string "res_url"
+    t.float "res_user_rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
