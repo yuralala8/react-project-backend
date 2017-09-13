@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20170908181430) do
     t.string "res_image"
     t.string "res_url"
     t.float "res_user_rating"
+    t.string "room_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

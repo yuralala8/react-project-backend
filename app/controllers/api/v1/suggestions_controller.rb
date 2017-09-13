@@ -6,7 +6,7 @@ class Api::V1::SuggestionsController < ApplicationController
 
   def create
   
-  	@suggestion = Suggestion.new(user_id: current_user[:id], username: current_user[:username], res_id: params[:res_id], vote_up: 0, vote_down: 0, res_name: params[:res_name], res_cuisines: params[:res_cuisines], res_location: params[:res_location], res_image: params[:res_image], res_url: params[:res_url], res_user_rating: params[:res_user_rating], res_menu_url: params[:res_menu_url])
+  	@suggestion = Suggestion.new(user_id: current_user[:id], username: current_user[:username], res_id: params[:res_id], vote_up: 0, vote_down: 0, res_name: params[:res_name], res_cuisines: params[:res_cuisines], res_location: params[:res_location], res_image: params[:res_image], res_url: params[:res_url], res_user_rating: params[:res_user_rating], res_menu_url: params[:res_menu_url], room_id: params[:room_id])
 
   	@suggestion.save
 
@@ -38,7 +38,7 @@ class Api::V1::SuggestionsController < ApplicationController
   private
 
   def suggestion_params
-  	params.require(:suggestion).permit(:res_id, :vote_up, :vote_down, :username, :user_id, :res_name, :res_cuisines, :res_location, :res_menu_url, :res_image, :res_url, :res_user_rating)
+  	params.require(:suggestion).permit(:res_id, :vote_up, :vote_down, :username, :user_id, :res_name, :res_cuisines, :res_location, :res_menu_url, :res_image, :res_url, :res_user_rating, :room_id)
   end
 
 end

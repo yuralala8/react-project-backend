@@ -13,6 +13,7 @@ class CreateSuggestions < ActiveRecord::Migration[5.1]
       t.string :res_image
       t.string :res_url
       t.float :res_user_rating
+      t.string :room_id
 
       t.timestamps
     end

@@ -5,7 +5,7 @@ class Api::V1::RestaurantsController < ApplicationController
 		
 		place = params[:location]
 
-		geourl = "https://maps.googleapis.com/maps/api/geocode/json?address="+place+"&key=AIzaSyDCkp7F1EoltHsrpSOWr2VG2GhPGR-o7jg"
+		geourl = "https://maps.googleapis.com/maps/api/geocode/json?address="+place+"&key=AIzaSyBDRZcLLEYOajOLr5vbAtr9JFiTTYYIecE"
 		lonlat = JSON.parse(RestClient.get(geourl, headers={'Accept': 'application/json'}))
 
 		lat = lonlat.dig('results')[0].dig('geometry').dig('location').dig('lat').to_s
