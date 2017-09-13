@@ -1,5 +1,6 @@
 class Api::V1::SuggestionsController < ApplicationController
-  before_action :authorized, only: [:index, :create, :update, :destroy]
+  before_action :authorized, only: [:index,:create, :update, :destroy]
+  
   def index
   	render json: Suggestion.vote_order
   end
